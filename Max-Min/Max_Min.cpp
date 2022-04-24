@@ -6,10 +6,19 @@
 #include <array>
 #include <cstddef>
 
-void find_Max_Min(const int givenArray[],size_t size, int *min, int* max);
+void find_Max_Min(const int givenArray[], size_t size, int *min, int* max);
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+
+    std::array<int, 20> array1 = {3,444,12,2123,343,12,223,-445,-23,3434,766,-78,878,33,5,55,54543122,422,467,3987};
+    int array2[20] =  {3,444,12,2123,343,12,223,-445,-23,3434,766,-78,878,33,5,55,54543122,422,467,3987};
+
+    int min1 = array2[0];
+    int max1 = array2[0];
+    size_t array1Size = 20;
+    find_Max_Min(array2, sizeof (array2), &min1, &max1);
+
     return 0;
 }
 

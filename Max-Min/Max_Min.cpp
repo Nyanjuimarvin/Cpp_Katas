@@ -17,7 +17,7 @@ int main() {
     int min1 = array2[0];
     int max1 = array2[0];
     size_t array1Size = 20;
-    find_Max_Min(array2, sizeof (array2), &min1, &max1);
+    find_Max_Min(array2, array1Size, &min1, &max1);
 
     return 0;
 }
@@ -34,6 +34,6 @@ void find_Max_Min(const int givenArray[], size_t size, int *minimum, int *maximu
         }
     }
 
-    std::cout << "Minimum is: %d" << minimum << std::endl;
-    std::cout << "Maximum is %d" << maximum << std::endl;
+    std::cout << "Minimum is: " << *minimum << std::endl;
+    std::cout << "Maximum is: " << *maximum << std::endl;
 }
